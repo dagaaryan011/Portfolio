@@ -1,0 +1,56 @@
+{
+  "projects": [
+    {
+      "id": "reinforcents",
+      "title": "Reinforcents",
+      "summary": "A realistic stock market simulator with reinforcement learning agents.",
+      "domain": "AI",
+      "topics": [
+        "Reinforcement Learning",
+        "Systems",
+        "Simulation",
+        "Finance"
+      ],
+      "tech": ["Python", "PyTorch"],
+      "weight": 5,
+      "links": {
+        "github": "https://github.com/",
+        "demo": null
+      }
+    },
+    {
+      "id": "gridrunner",
+      "title": "GridRunner",
+      "summary": "Maze-solving agents trained using classical reinforcement learning.",
+      "domain": "AI",
+      "topics": [
+        "Reinforcement Learning",
+        "Classical RL",
+        "Control"
+      ],
+      "tech": ["Python", "SARSA", "Q-Learning"],
+      "weight": 2,
+      "links": {
+        "github": "https://github.com/",
+        "demo": null
+      }
+    },
+    {
+      "id": "face-login",
+      "title": "Face Recognition Login",
+      "summary": "A Linux PAM-based facial authentication system.",
+      "domain": "Systems",
+      "topics": [
+        "Computer Vision",
+        "Authentication",
+        "Security"
+      ],
+      "tech": ["Python", "OpenCV", "Linux"],
+      "weight": 2,
+      "links": {
+        "github": "https://github.com/",
+        "demo": null
+      }
+    }
+  ]
+}

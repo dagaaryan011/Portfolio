@@ -1,0 +1,54 @@
+{
+  "skills": [
+    {
+      "category": "AI & Machine Learning",
+      "items": [
+        {
+          "name": "Reinforcement Learning",
+          "description": "Trained agents for grid environments and market simulations.",
+          "projects": ["Reinforcents", "GridRunner"]
+        },
+        {
+          "name": "PyTorch",
+          "description": "Built custom training loops and experiment pipelines.",
+          "projects": ["Reinforcents"]
+        },
+        {
+          "name": "Computer Vision",
+          "description": "Face recognition based authentication on Linux.",
+          "projects": ["Face Login"]
+        }
+      ]
+    },
+    {
+      "category": "Systems & Backend",
+      "items": [
+        {
+          "name": "Linux",
+          "description": "Worked with PAM, services, and system-level tooling.",
+          "projects": ["Face Login"]
+        },
+        {
+          "name": "Python",
+          "description": "Primary language for simulations, tooling, and ML.",
+          "projects": ["Reinforcents", "GridRunner", "Face Login"]
+        }
+      ]
+    },
+    {
+      "category": "Web Development",
+      "items": [
+        {
+          "name": "React",
+          "description": "Built interactive UIs and visual systems.",
+          "projects": ["Portfolio"]
+        },
+        {
+          "name": "JavaScript",
+          "description": "Used for UI logic, animations, and interactivity.",
+          "projects": ["Portfolio"]
+        }
+      ]
+    }
+  ]
+}
