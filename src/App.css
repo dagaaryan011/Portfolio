@@ -326,13 +326,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   pointer-events: none;
 
   /* PNG mask */
-  -webkit-mask-image: url('/home/dagaaryan011/projects/my-portfolio/src/assets/img/matrix_mask .png');
+  -webkit-mask-image: url('../src/assets/img/matrix_mask.png');
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;
   -webkit-mask-position: top right;
    -webkit-mask-size: 140%;
   mask-size: 140%;
-  mask-image: url('/home/dagaaryan011/projects/my-portfolio/src/assets/img/matrix_mask .png');
+  mask-image: url('../src/assets/img/matrix_mask.png');
   mask-repeat: no-repeat;
   mask-size: cover;
   mask-position: top right;

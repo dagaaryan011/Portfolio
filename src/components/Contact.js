@@ -25,7 +25,7 @@ export const Contact = () => {
       window.location.href =
         "mailto:dagaaryan11@gmail.com?subject=Let’s%20Connect";
     } else if (command === "instagram") {
-      window.open("https://ig.me/m/yourusername", "_blank");
+      window.open("https://ig.me/m/dagaaryan011", "_blank");
     } else if (command) {
       next.push("unknown command");
     }
