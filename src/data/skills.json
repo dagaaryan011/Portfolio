@@ -14,9 +14,24 @@
           "projects": ["Reinforcents"]
         },
         {
+          "name": "Supervised Learning",
+          "description": "Trained predictive models alongside RL agents in simulated markets.",
+          "projects": ["Reinforcents"]
+        },
+        {
+          "name": "Retrieval-Augmented Generation (RAG)",
+          "description": "Designed pipelines combining retrieval with generation for interactive querying.",
+          "projects": ["20 Questions with PC"]
+        },
+        {
           "name": "Computer Vision",
-          "description": "Face recognition based authentication on Linux.",
-          "projects": ["Face Login"]
+          "description": "Applied vision models for authentication, terrain modeling, and assistive navigation.",
+          "projects": ["Face Recognition Login", "Rockfall Prediction System", "Dekho"]
+        },
+        {
+          "name": "Depth Estimation",
+          "description": "Used monocular depth estimation for obstacle detection and navigation assistance.",
+          "projects": ["Dekho"]
         }
       ]
     },
@@ -25,13 +40,39 @@
       "items": [
         {
           "name": "Linux",
-          "description": "Worked with PAM, services, and system-level tooling.",
-          "projects": ["Face Login"]
+          "description": "Worked with PAM, authentication pipelines, and system-level tooling.",
+          "projects": ["Face Recognition Login"]
+        },
+        {
+          "name": "Linux PAM",
+          "description": "Integrated custom authentication modules into the OS login process.",
+          "projects": ["Face Recognition Login"]
+        },
+        {
+          "name": "Cache Management",
+          "description": "Implemented cache replacement policies and coherence mechanisms.",
+          "projects": ["Cache Management System"]
+        },
+        {
+          "name": "Operating Systems",
+          "description": "Applied OS concepts such as memory hierarchy and authentication systems.",
+          "projects": ["Cache Management System", "Face Recognition Login"]
         },
         {
           "name": "Python",
-          "description": "Primary language for simulations, tooling, and ML.",
-          "projects": ["Reinforcents", "GridRunner", "Face Login"]
+          "description": "Primary language for simulations, ML pipelines, and tooling.",
+          "projects": [
+            "Reinforcents",
+            "GridRunner",
+            "Face Recognition Login",
+            "20 Questions with PC",
+            "Rockfall Prediction System"
+          ]
+        },
+        {
+          "name": "C++",
+          "description": "Used for low-level systems programming and performance-sensitive components.",
+          "projects": ["Cache Management System"]
         }
       ]
     },
@@ -40,13 +81,63 @@
       "items": [
         {
           "name": "React",
-          "description": "Built interactive UIs and visual systems.",
-          "projects": ["Portfolio"]
+          "description": "Built interactive UIs and minimalistic frontends for AI-driven applications.",
+          "projects": ["Portfolio", "20 Questions with PC"]
         },
         {
           "name": "JavaScript",
-          "description": "Used for UI logic, animations, and interactivity.",
+          "description": "Used for UI logic, animations, and client-side interactivity.",
           "projects": ["Portfolio"]
+        },
+        {
+          "name": "Tailwind CSS",
+          "description": "Styled responsive and clean user interfaces efficiently.",
+          "projects": ["Portfolio"]
+        },
+        {
+          "name": "Streamlit",
+          "description": "Rapidly prototyped data-driven and ML-focused web interfaces.",
+          "projects": ["Reinforcents"]
+        }
+      ]
+    },
+    {
+      "category": "Simulation & Modeling",
+      "items": [
+        {
+          "name": "Market Simulation",
+          "description": "Modeled stock and options markets with configurable dynamics.",
+          "projects": ["Reinforcents"]
+        },
+        {
+          "name": "Multi-Agent Systems",
+          "description": "Designed environments where multiple agents interact and learn concurrently.",
+          "projects": ["Reinforcents"]
+        },
+        {
+          "name": "Terrain Modeling",
+          "description": "Generated DEMs and simulated physical processes over terrain.",
+          "projects": ["Rockfall Prediction System"]
+        }
+      ]
+    },
+    {
+      "category": "Developer Tools",
+      "items": [
+        {
+          "name": "Git",
+          "description": "Used for version control, collaboration, and deployment workflows.",
+          "projects": ["Portfolio", "Reinforcents"]
+        },
+        {
+          "name": "Linux",
+          "description": "Primary development environment for systems and ML projects.",
+          "projects": ["Face Recognition Login", "Cache Management System"]
+        },
+        {
+          "name": "Jupyter Notebook",
+          "description": "Explored data, prototyped models, and documented experiments.",
+          "projects": ["Reinforcents", "GridRunner"]
         }
       ]
     }

@@ -129,9 +129,7 @@ export const Banner = () => {
 
                   <h1>
                     {`Hi! I'm Aryan- `}
-                    <span className="txt-rotate">
-                      <span className="wrap">{text}</span>
-                    </span>
+                    
                   </h1>
 
                   <p className="mt-4 text-zinc-400 text-lg leading-relaxed max-w-lg">

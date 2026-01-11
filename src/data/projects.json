@@ -3,52 +3,123 @@
     {
       "id": "reinforcents",
       "title": "Reinforcents",
-      "summary": "A realistic stock market simulator with reinforcement learning agents.",
+      "summary": "A realistic stock and options market simulator with configurable dynamics and learning agents.",
       "domain": "AI",
       "topics": [
         "Reinforcement Learning",
-        "Systems",
-        "Simulation",
-        "Finance"
+        "Market Simulation",
+        "Finance",
+        "Multi-Agent Systems"
       ],
       "tech": ["Python", "PyTorch"],
       "weight": 5,
       "links": {
-        "github": "https://github.com/",
+        "github": "https://github.com/dagaaryan011/Reinforcents",
         "demo": null
       }
     },
     {
       "id": "gridrunner",
       "title": "GridRunner",
-      "summary": "Maze-solving agents trained using classical reinforcement learning.",
+      "summary": "Maze-solving agents trained using classical reinforcement learning algorithms.",
       "domain": "AI",
       "topics": [
         "Reinforcement Learning",
         "Classical RL",
-        "Control"
+        "Control Systems"
       ],
-      "tech": ["Python", "SARSA", "Q-Learning"],
-      "weight": 2,
+      "tech": ["Python", "SARSA", "Expected SARSA", "Q-Learning"],
+      "weight": 3,
       "links": {
-        "github": "https://github.com/",
+        "github": "https://github.com/dagaaryan011/GridRunner",
         "demo": null
       }
     },
     {
-      "id": "face-login",
-      "title": "Face Recognition Login",
-      "summary": "A Linux PAM-based facial authentication system.",
+      "id": "face-recognition-login",
+      "title": "Face Recognition Login System",
+      "summary": "A facial biometric authentication system integrated into Linux login using PAM.",
       "domain": "Systems",
       "topics": [
         "Computer Vision",
         "Authentication",
-        "Security"
+        "Security",
+        "Operating Systems"
       ],
-      "tech": ["Python", "OpenCV", "Linux"],
+      "tech": ["Python", "OpenCV", "Linux PAM"],
+      "weight": 3,
+      "links": {
+        "github": "https://github.com/dagaaryan011",
+        "demo": null
+      }
+    },
+    {
+      "id": "twenty-questions-pc",
+      "title": "20 Questions with PC",
+      "summary": "An interactive RAG-based guessing game where users query an AI agent to identify a book.",
+      "domain": "AI",
+      "topics": [
+        "Retrieval-Augmented Generation",
+        "LLM Applications",
+        "Human-AI Interaction"
+      ],
+      "tech": ["Python", "React", "RAG"],
       "weight": 2,
       "links": {
-        "github": "https://github.com/",
+        "github": "https://github.com/dagaaryan011/20-Questions",
+        "demo": null
+      }
+    },
+    {
+      "id": "rockfall-prediction",
+      "title": "Rockfall Prediction System",
+      "summary": "Terrain-aware rockfall hazard prediction using DEM generation and trajectory simulation.",
+      "domain": "Computer Vision",
+      "topics": [
+        "Terrain Modeling",
+        "Simulation",
+        "Geospatial Analysis",
+        "Risk Prediction"
+      ],
+      "tech": ["Python", "Computer Vision"],
+      "weight": 3,
+      "links": {
+        "github": null,
+        "demo": null
+      }
+    },
+    {
+      "id": "cache-management",
+      "title": "Cache Management System",
+      "summary": "A C++ cache simulator implementing multiple replacement and coherence strategies.",
+      "domain": "Systems",
+      "topics": [
+        "Memory Systems",
+        "Cache Coherence",
+        "Performance Optimization"
+      ],
+      "tech": ["C++"],
+      "weight": 2,
+      "links": {
+        "github": "https://github.com/dagaaryan011/cache_management",
+        "demo": null
+      }
+    },
+    {
+      "id": "dekho",
+      "title": "Dekho",
+      "summary": "An assistive navigation system for the visually impaired using real-time vision and depth estimation.",
+      "domain": "AI",
+      "topics": [
+        "Assistive Technology",
+        "Computer Vision",
+        "Depth Estimation",
+        "Accessibility"
+      ],
+      "tech": ["Grounding DINO", "Depth-Anything-V2"],
+      "weight": 4,
+      "links": {
+        "github": null,
         "demo": null
       }
     }
