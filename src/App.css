@@ -360,6 +360,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
+.banner h1 {
+  text-shadow: 0 2px 12px rgba(28, 167, 0, 0.8);
+}
+
+.banner p {
+  text-shadow: 0 1px 8px rgba(255, 0, 0, 0.9);
+}
+
+.banner .tagline {
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+}
+
 a.connect {
   color: #fff;
   font-weight: 700;
