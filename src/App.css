@@ -360,23 +360,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
-.banner button {
+a.connect {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
   letter-spacing: 0.8px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  cursor: pointer;
 }
-.banner button svg {
-  font-size: 25px;
-  margin-left: 10px;
-  transition: 0.3s ease-in-out;
-  line-height: 1;
+
+a.connect:hover {
+  color: #fff;
+  text-decoration: none;
 }
-.banner button:hover svg {
-  margin-left: 25px;
+
+a.connect:hover svg {
+  transform: translateX(8px);
+  transition: transform 0.3s ease-in-out;
+}
+
+a.connect svg {
+  transition: transform 0.3s ease-in-out;
 }
 
 @keyframes updown {

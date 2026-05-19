@@ -128,33 +128,30 @@ export const Banner = () => {
                  
 
                   <h1>
-                    {`Hi! I'm Aryan- `}
+                    {`Hi! Aryan this side`}
                     
                   </h1>
 
                   <p className="mt-4 text-zinc-400 text-lg leading-relaxed max-w-lg">
-                    Hi, I’m <span className="text-white-font-medium">Aryan</span>. I’m a
-                    <span className="text-white-font-medium"> second-year IT student at VJTI </span>
-                    who enjoys building things at the intersection of
-                    <span className="text-white-font-medium"> AI </span>
-                    and
-                    <span className="text-white-font-medium"> web development</span>.
-                    <br /><br />
-                    I like working on projects where ideas turn into
-                    <span className="text-white-font-medium"> working systems</span>, whether that’s training
-                    <span className="text-white-font-medium"> reinforcement learning agents</span>, building
-                    <span className="text-white-font-medium"> simulations</span>, or creating simple
-                    <span className="text-white-font-medium"> web apps </span>.
-                    <br /><br />
-                    Right now, I’m focused on
-                    <span className="text-white-font-medium"> AI through hands-on projects </span>
-                    while improving my
-                    <span className="text-white-font-medium"> web development skills</span>.
+                  I'm a<span className="text-white-font-medium"> second-year IT student at VJTI, Mumbai</span>.
+                  I work on problems that sit at the boundary of
+                  <span className="text-white-font-medium"> AI </span>
+                  and
+                  <span className="text-white-font-medium"> systems </span>
+                  — building
+                  <span className="text-white-font-medium"> reinforcement learning agents</span>, designing
+                  <span className="text-white-font-medium"> multi-agent simulations</span>, and applying
+                  <span className="text-white-font-medium"> computer vision </span>
+                  to real-world constraints.
+                  <br /><br />
+                  I'm drawn to work where the
+                  <span className="text-white-font-medium"> implementation details </span>
+                  matter as much as the idea, and to people who feel the same way.
                   </p>
-
-                  <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
+                  
+                    <a href="#connect" className="connect">
+  Let's Connect <ArrowRightCircle size={25} />
+</a>
                 </div>
               )}
             </TrackVisibility>
