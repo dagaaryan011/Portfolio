@@ -1,29 +1,22 @@
 import { useState } from "react";
-import { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
+import projectsData from "../data/projects.json";
 
-import { Graph } from "./Graph";
+const DOMAIN_COLORS = {
+  AI: "#6ae3a1",
+  "Computer Vision": "#a78bfa",
+  Systems: "#f4c430",
+  Web: "#61dafb",
+  Other: "#9ca3af",
+};
 
 export const Projects = () => {
-  const [expanded, setExpanded] = useState(false);
-  const [activeProject, setActiveProject] = useState(null);
-useEffect(() => {
-  if (expanded) {
-    document.body.classList.add("no-scroll");
-  } else {
-    document.body.classList.remove("no-scroll");
-  }
-
-  return () => {
-    document.body.classList.remove("no-scroll");
-  };
-}, [expanded]);
+  const [hoveredId, setHoveredId] = useState(null);
 
   return (
     <section className="project" id="projects">
-      {/* NORMAL MODE (inside layout) */}
       <Container>
         <Row>
           <Col size={12}>
@@ -31,33 +24,91 @@ useEffect(() => {
               {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Projects</h2>
-                  <p>
-                    A growing network of projects exploring AI, reinforcement learning,
-                    simulations, and web systems. Click a node to explore.
+                  <p className="projects-intro">
+                    A focused set of systems and experiments — each one built to understand something deeper.
                   </p>
-              
-                  <div className="projects-window">
-                    <div className="projects-window-header">
-                      <span>Project Graph</span>
-                      <button
-                        className="projects-expand-btn"
-                        onClick={() => setExpanded(true)}
-                      >
-                        ⛶
-                      </button>
-                    </div>
-              
-                    <div className="projects-body">
-                      <div className="graph-pane">
-                        <Graph
-                          onNodeClick={(project) => {
-                            setActiveProject(project);
-                            setExpanded(true);
-                          }}
-                        />
-                      </div>
 
-                    </div>
+                  <div className="projects-list">
+                    {projectsData.projects.map((project, index) => {
+                      const isOpen = hoveredId === project.id;
+                      const color = DOMAIN_COLORS[project.domain] || DOMAIN_COLORS.Other;
+
+                      return (
+                        <div
+                          key={project.id}
+                          className={`project-row ${isOpen ? "open" : ""}`}
+                          onMouseEnter={() => setHoveredId(project.id)}
+                          onMouseLeave={() => setHoveredId(null)}
+                          style={{ "--accent": color }}
+                        >
+                          {/* Always-visible top bar */}
+                          <div className="project-row-top">
+                            <div className="project-row-left">
+                              <span className="project-index">
+                                {String(index + 1).padStart(2, "0")}
+                              </span>
+                              <span className="project-row-title">{project.title}</span>
+                            </div>
+
+                            <div className="project-row-right">
+                              <span
+                                className="project-domain-tag"
+                                style={{ color, borderColor: color }}
+                              >
+                                {project.domain}
+                              </span>
+
+                              <div className="project-tech-pills">
+                                {project.tech.slice(0, 2).map((t) => (
+                                  <span key={t} className="tech-pill">{t}</span>
+                                ))}
+                                {project.tech.length > 2 && (
+                                  <span className="tech-pill muted">+{project.tech.length - 2}</span>
+                                )}
+                              </div>
+
+                              <span className="project-arrow">{isOpen ? "−" : "+"}</span>
+                            </div>
+                          </div>
+
+                          {/* Expandable body */}
+                          <div className="project-row-body">
+                            <div className="project-row-body-inner">
+                              <p className="project-summary">{project.summary}</p>
+
+                              <div className="project-topics">
+                                {project.topics.map((t) => (
+                                  <span key={t} className="topic-tag">{t}</span>
+                                ))}
+                              </div>
+
+                              <div className="project-links">
+                                {project.links?.github && (
+                                  <a
+                                    href={project.links.github}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="proj-link"
+                                  >
+                                    GitHub →
+                                  </a>
+                                )}
+                                {project.links?.demo && (
+                                  <a
+                                    href={project.links.demo}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="proj-link"
+                                  >
+                                    Live Demo →
+                                  </a>
+                                )}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               )}
@@ -65,83 +116,6 @@ useEffect(() => {
           </Col>
         </Row>
       </Container>
-            
-      {/* EXPANDED MODE (OUTSIDE layout) */}
-      {expanded && (
-        <>
-          <div
-            className="projects-backdrop"
-            onClick={() => setExpanded(false)}
-          />
-
-          <div className="projects-window expanded">
-            <div className="projects-window-header">
-              <span>Project Graph</span>
-              <button
-                className="projects-expand-btn"
-                onClick={() => {
-                  setExpanded(false);
-                  setActiveProject(null);
-                }}
-              >
-                ✕
-              </button>
-
-            </div>
-      
-            <div className="projects-body">
-              <div className="graph-pane">
-                <Graph
-                  onNodeClick={(project) => {
-                    setActiveProject(project);
-                  }}
-                />
-
-              </div>
-      
-              {activeProject && (
-                  <aside className="card-pane">
-                    
-
-                    <h4>{activeProject.title}</h4>
-                    <p>{activeProject.summary}</p>
-
-                    <div className="tags">
-                      {Array.isArray(activeProject.domain) &&
-                        activeProject.domain.map(d => (
-                          <span key={d}>{d}</span>
-                        ))}
-
-                    </div>
-                    
-                    <div className="links">
-                      {activeProject.links?.github && (
-                        <a
-                          href={activeProject.links.github}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          GitHub
-                        </a>
-                      )}
-                      {activeProject.links?.demo && (
-                        <a
-                          href={activeProject.links.demo}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          Demo
-                        </a>
-                      )}
-                    </div>
-                  </aside>
-                )}
-
-            </div>
-          </div>
-        </>
-      )}
     </section>
-
   );
 };

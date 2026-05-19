@@ -12,7 +12,7 @@ export const Footer = () => {
           {/* LEFT */}
           <Col md={4} className="footer-left">
             <div className="footer-logo">
-              &lt;dagaarayan011/&gt;<span className="cursor">█</span>
+              &lt;dagaarayan011/&gt;<span className="cursor"></span>
             </div>
             <p className="footer-desc">
               Exploring AI, systems, and web engineering through hands-on projects.

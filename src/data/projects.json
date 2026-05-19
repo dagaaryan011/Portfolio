@@ -3,7 +3,7 @@
     {
       "id": "reinforcents",
       "title": "Reinforcents",
-      "summary": "A realistic stock and options market simulator with configurable dynamics and learning agents.",
+      "summary": "A full market simulator where multiple RL agents trade stocks and options in a shared environment with configurable volatility and liquidity. Agents learn independently while competing — closer to how real markets behave than any toy problem.",
       "domain": "AI",
       "topics": [
         "Reinforcement Learning",
@@ -19,9 +19,45 @@
       }
     },
     {
+      "id": "dekho",
+      "title": "Dekho",
+      "summary": "A real-time assistive navigation system for the visually impaired. Combines open-vocabulary object detection with monocular depth estimation to describe the environment as it changes — built for people who can't afford to wait on a response.",
+      "domain": "AI",
+      "topics": [
+        "Assistive Technology",
+        "Computer Vision",
+        "Depth Estimation",
+        "Accessibility"
+      ],
+      "tech": ["Grounding DINO", "Depth-Anything-V2"],
+      "weight": 4,
+      "links": {
+        "github": "https://github.com/dagaaryan011",
+        "demo": null
+      }
+    },
+    {
+      "id": "rockfall-prediction",
+      "title": "Rockfall Prediction System",
+      "summary": "Predicts rockfall hazard zones by generating digital elevation models from terrain data and simulating boulder trajectories across the surface. Turns raw geospatial data into risk maps that could actually inform infrastructure decisions.",
+      "domain": "Computer Vision",
+      "topics": [
+        "Terrain Modeling",
+        "Simulation",
+        "Geospatial Analysis",
+        "Risk Prediction"
+      ],
+      "tech": ["Python", "Computer Vision"],
+      "weight": 3,
+      "links": {
+        "github": "https://github.com/dagaaryan011",
+        "demo": null
+      }
+    },
+    {
       "id": "gridrunner",
       "title": "GridRunner",
-      "summary": "Maze-solving agents trained using classical reinforcement learning algorithms.",
+      "summary": "Implemented Q-Learning, SARSA, and Expected SARSA from scratch to train maze-solving agents — no libraries doing the heavy lifting. A clean comparison of how subtle differences in update rules change agent behavior over time.",
       "domain": "AI",
       "topics": [
         "Reinforcement Learning",
@@ -38,7 +74,7 @@
     {
       "id": "face-recognition-login",
       "title": "Face Recognition Login System",
-      "summary": "A facial biometric authentication system integrated into Linux login using PAM.",
+      "summary": "Replaced password-based login with facial biometrics by writing a custom PAM module that hooks directly into the Linux authentication stack. No middleware, no shortcuts — the OS calls the model at login time.",
       "domain": "Systems",
       "topics": [
         "Computer Vision",
@@ -54,44 +90,9 @@
       }
     },
     {
-      "id": "twenty-questions-pc",
-      "title": "20 Questions with PC",
-      "summary": "An interactive RAG-based guessing game where users query an AI agent to identify a book.",
-      "domain": "AI",
-      "topics": [
-        "Retrieval-Augmented Generation",
-        "LLM Applications",
-        "Human-AI Interaction"
-      ],
-      "tech": ["Python", "React", "RAG"],
-      "weight": 2,
-      "links": {
-        "github": "https://github.com/dagaaryan011/20-Questions",
-        "demo": null
-      }
-    },
-    {
-      "id": "rockfall-prediction",
-      "title": "Rockfall Prediction System",
-      "summary": "Terrain-aware rockfall hazard prediction using DEM generation and trajectory simulation.",
-      "domain": "Computer Vision",
-      "topics": [
-        "Terrain Modeling",
-        "Simulation",
-        "Geospatial Analysis",
-        "Risk Prediction"
-      ],
-      "tech": ["Python", "Computer Vision"],
-      "weight": 3,
-      "links": {
-        "github": null,
-        "demo": null
-      }
-    },
-    {
       "id": "cache-management",
       "title": "Cache Management System",
-      "summary": "A C++ cache simulator implementing multiple replacement and coherence strategies.",
+      "summary": "A C++ simulator that models cache behavior across multiple replacement policies and coherence strategies. Built to understand what actually happens at the memory hierarchy level — not just what textbooks say should happen.",
       "domain": "Systems",
       "topics": [
         "Memory Systems",
@@ -102,24 +103,6 @@
       "weight": 2,
       "links": {
         "github": "https://github.com/dagaaryan011/cache_management",
-        "demo": null
-      }
-    },
-    {
-      "id": "dekho",
-      "title": "Dekho",
-      "summary": "An assistive navigation system for the visually impaired using real-time vision and depth estimation.",
-      "domain": "AI",
-      "topics": [
-        "Assistive Technology",
-        "Computer Vision",
-        "Depth Estimation",
-        "Accessibility"
-      ],
-      "tech": ["Grounding DINO", "Depth-Anything-V2"],
-      "weight": 4,
-      "links": {
-        "github": null,
         "demo": null
       }
     }
