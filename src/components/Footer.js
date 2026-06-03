@@ -51,9 +51,7 @@ export const Footer = () => {
         </Row>
 
         <Row className="footer-bottom">
-          <Col>
-            <p>© {new Date().getFullYear()} Aryan. All rights reserved.</p>
-          </Col>
+          
         </Row>
       </Container>
     </footer>
